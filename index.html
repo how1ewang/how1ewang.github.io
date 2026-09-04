@@ -11,16 +11,38 @@
   <meta property="og:type" content="website">
   <meta property="og:title" content="Howie Wang — From first conversation to live product">
   <meta property="og:description" content="Solutions engineering & implementation. A commerce platform for a biotech company: 11 partner integrations, 50 releases, 800+ members — discovery to support, one person.">
-  <meta name="twitter:card" content="summary">
+  <meta property="og:image" content="https://how1ewang.github.io/img/console-builder.jpg">
+  <meta name="twitter:card" content="summary_large_image">
 
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231d1d1f'/%3E%3Ctext x='32' y='41' text-anchor='middle' font-family='-apple-system,Helvetica,Arial,sans-serif' font-size='26' font-weight='600' fill='%23fff'%3EHW%3C/text%3E%3C/svg%3E">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+  <link rel="preload" as="image" href="img/console-builder.webp" type="image/webp">
   <link rel="stylesheet" href="styles.css">
+  <noscript><style>.reveal, .pipeline.reveal .pipeline-steps li, .shift-arrow svg { opacity: 1 !important; transform: none !important; }</style></noscript>
 </head>
 <body>
+
+  <!-- Icon sprite: hairline SF-Symbols-style glyphs, referenced with <use> -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <symbol id="i-link" viewBox="0 0 24 24"><path d="M10 14a3.5 3.5 0 0 0 5 0l3-3a3.5 3.5 0 0 0-5-5l-1.2 1.2"/><path d="M14 10a3.5 3.5 0 0 0-5 0l-3 3a3.5 3.5 0 0 0 5 5l1.2-1.2"/></symbol>
+      <symbol id="i-bubbles" viewBox="0 0 24 24"><path d="M4 5.5h10a2 2 0 0 1 2 2V12a2 2 0 0 1-2 2H9l-4 3v-3a2 2 0 0 1-3-2V7.5a2 2 0 0 1 2-2z"/><path d="M18.5 9.5h1.5a2 2 0 0 1 2 2v4.5a2 2 0 0 1-2 2h-1v3l-4-3h-3"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.6 2.6L16 9.6"/></symbol>
+      <symbol id="i-book" viewBox="0 0 24 24"><path d="M4 4.5h6a2 2 0 0 1 2 2v13a2 2 0 0 0-2-2H4z"/><path d="M20 4.5h-6a2 2 0 0 0-2 2v13a2 2 0 0 1 2-2h6z"/></symbol>
+      <symbol id="i-loop" viewBox="0 0 24 24"><path d="M3.5 12a8.5 8.5 0 0 1 14.6-5.9L20 8"/><path d="M20 3.5V8h-4.5"/><path d="M20.5 12a8.5 8.5 0 0 1-14.6 5.9L4 16"/><path d="M4 20.5V16h4.5"/></symbol>
+      <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l7 2.8v5.7c0 4.4-3 8.1-7 9.5-4-1.4-7-5.1-7-9.5V5.8z"/><path d="M9 12l2.2 2.2L15.5 10"/></symbol>
+      <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.6 2.6 3.9 5.6 3.9 9s-1.3 6.4-3.9 9c-2.6-2.6-3.9-5.6-3.9-9S9.4 5.6 12 3z"/></symbol>
+      <symbol id="i-layout" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2.5"/><path d="M3 9.5h18"/><path d="M9.5 9.5V20"/></symbol>
+      <symbol id="i-sliders" viewBox="0 0 24 24"><path d="M4 7h9"/><path d="M17 7h3"/><path d="M4 17h3"/><path d="M11 17h9"/><circle cx="15" cy="7" r="2"/><circle cx="9" cy="17" r="2"/></symbol>
+      <symbol id="i-database" viewBox="0 0 24 24"><ellipse cx="12" cy="6" rx="8" ry="3"/><path d="M4 6v12c0 1.7 3.6 3 8 3s8-1.3 8-3V6"/><path d="M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></symbol>
+      <symbol id="i-refund" viewBox="0 0 24 24"><path d="M8.5 13.5L4 9l4.5-4.5"/><path d="M4 9h10a5.5 5.5 0 0 1 0 11H10"/></symbol>
+      <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15"/><path d="M13 6l6 6-6 6"/></symbol>
+      <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14"/><path d="M5 12h14"/></symbol>
+    </defs>
+  </svg>
 
   <!-- ============================== NAV ============================== -->
   <header class="nav" id="nav">
@@ -66,10 +88,8 @@
           <span class="muted">to live product.</span>
         </h1>
         <p class="hero-lead reveal" data-delay="2">
-          I sit between the people who run a business and the systems that run it: understanding the need,
-          choosing and integrating the right tools, getting them live, and making sure the people using them
-          succeed. Most recently: a commerce platform for a biotech company — eleven partner systems, 50
-          releases, 800+ members — delivered end to end by one person.
+          I sit between the people who run a business and the systems that run it — understanding the need,
+          integrating the right tools, getting them live, and making sure the people using them succeed.
         </p>
         <div class="hero-cta reveal" data-delay="3">
           <a class="btn" href="#work">Read the case study</a>
@@ -77,7 +97,24 @@
         </div>
       </div>
 
-      <div class="stats container reveal" data-delay="4" aria-label="Key numbers">
+      <!-- Product shot: the real staff console -->
+      <figure class="hero-shot container reveal reveal-shot" data-delay="4">
+        <div class="device device-browser">
+          <div class="device-bar"><span></span><span></span><span></span><em>console · appearance · homepage builder</em></div>
+          <picture>
+            <source media="(max-width: 734px)" srcset="img/console-builder-m.webp" type="image/webp" width="1100" height="1356">
+            <source media="(max-width: 734px)" srcset="img/console-builder-m.jpg" type="image/jpeg" width="1100" height="1356">
+            <source srcset="img/console-builder.webp" type="image/webp">
+            <img src="img/console-builder.jpg" width="2200" height="1375" alt="The staff console: a drag-and-drop homepage builder with a component library on the left, a live phone preview in the middle and property settings on the right." fetchpriority="high">
+          </picture>
+        </div>
+        <figcaption>
+          The staff console I designed and built for a biotech company. Shown: the drag-and-drop page builder
+          that lets marketing publish the storefront homepage without a developer.
+        </figcaption>
+      </figure>
+
+      <div class="stats container reveal" aria-label="Key numbers">
         <div class="stat">
           <div class="stat-value"><span data-count="11">11</span></div>
           <div class="stat-label">partner systems integrated</div>
@@ -111,10 +148,9 @@
         <p class="eyebrow reveal">Case study</p>
         <h2 class="section-title reveal" data-delay="1">YuanQiPai.</h2>
         <p class="section-lead reveal" data-delay="2">
-          A biotech company sells health products through a dealer network and directly to consumers on WeChat.
-          It ran on disconnected tools: no single view of members, dealers, orders or commissions, and every
-          marketing change needed outside help. I was the only technical person — and the single point of
-          contact between the owner and the platform, from the first conversation to day-to-day operations.
+          A biotech company sells health products through dealers and directly to consumers on WeChat. It ran
+          on disconnected tools, and every marketing change needed outside help. I was the only technical
+          person — the single point of contact from first conversation to daily operations.
         </p>
         <p class="meta-line reveal" data-delay="3">
           <span>2025 — Present</span>
@@ -127,11 +163,11 @@
         <section class="pipeline pipeline-phases reveal" aria-labelledby="phasesCaption">
           <div class="pipeline-caption" id="phasesCaption">How the work unfolded</div>
           <ol class="pipeline-steps">
-            <li><span class="pipeline-step">Discover</span><span class="pipeline-desc">Sat with the owner and staff; mapped how members, dealers, orders and commissions actually flowed</span></li>
-            <li><span class="pipeline-step">Scope</span><span class="pipeline-desc">Turned goals into 17 product areas and a phased plan: launch a storefront first, grow from there</span></li>
-            <li><span class="pipeline-step">Implement &amp; integrate</span><span class="pipeline-desc">Four products on one platform; 11 partner systems for payments, cloud, ERP and the WeChat ecosystem</span></li>
-            <li><span class="pipeline-step">Go live</span><span class="pipeline-desc">WeChat platform compliance, entity filings, domain and HTTPS, a launch-readiness checklist</span></li>
-            <li><span class="pipeline-step">Train &amp; support</span><span class="pipeline-desc">An illustrated guide so staff run it themselves; feedback rounds turned into 50 releases; on call when it broke</span></li>
+            <li><span class="pipeline-step">Discover</span><span class="pipeline-desc">Sat with the owner and staff; mapped how the business actually runs.</span></li>
+            <li><span class="pipeline-step">Scope</span><span class="pipeline-desc">17 product areas in phases: storefront first, then loyalty, dealers, content.</span></li>
+            <li><span class="pipeline-step">Implement &amp; integrate</span><span class="pipeline-desc">Four products on one platform; 11 partner systems connected.</span></li>
+            <li><span class="pipeline-step">Go live</span><span class="pipeline-desc">WeChat compliance, entity filings, domain and HTTPS, launch checklist.</span></li>
+            <li><span class="pipeline-step">Train &amp; support</span><span class="pipeline-desc">Illustrated guide for staff; feedback rounds became 50 releases; on call when it broke.</span></li>
           </ol>
         </section>
 
@@ -142,17 +178,17 @@
             <div class="arch-node">
               <div class="arch-node-kicker">Staff console</div>
               <div class="arch-node-title">42 screens</div>
-              <div class="arch-node-desc">Drag-and-drop page builder, orders &amp; after-sales, members &amp; tiers, coupons, finance reconciliation, anti-counterfeit traceability.</div>
+              <div class="arch-node-desc">Page builder · orders &amp; after-sales · members · coupons · finance · anti-counterfeit.</div>
             </div>
             <div class="arch-node">
               <div class="arch-node-kicker">WeChat Mini Program</div>
               <div class="arch-node-title">58 screens</div>
-              <div class="arch-node-desc">Storefront and cart, in-app payment, points wallet &amp; withdrawals, dealer and team hierarchy, scan-to-verify authenticity.</div>
+              <div class="arch-node-desc">Storefront · in-app payment · points wallet · dealer hierarchy · scan-to-verify.</div>
             </div>
             <div class="arch-node">
               <div class="arch-node-kicker">Registration tool</div>
               <div class="arch-node-title">20 countries</div>
-              <div class="arch-node-desc">A phone form that replaced paper for offline sales, with a map dashboard for the owner. Independently deployed.</div>
+              <div class="arch-node-desc">A phone form that replaced paper, with a live map for the owner.</div>
             </div>
           </div>
 
@@ -162,7 +198,7 @@
             <div class="arch-node arch-node-core">
               <div class="arch-node-kicker">The platform behind them</div>
               <div class="arch-node-title">Membership · Orders · Commissions · Content</div>
-              <div class="arch-node-desc">Role-based access for staff · configurable commission and reward rules · audit trail of sensitive actions · automated refunds · finance exports for the accountant.</div>
+              <div class="arch-node-desc">Role-based access · configurable reward rules · audit trail · automated refunds · finance exports.</div>
             </div>
           </div>
 
@@ -171,19 +207,19 @@
           <div class="arch-row arch-row-4">
             <div class="arch-node arch-node-sm">
               <div class="arch-node-kicker">Payments</div>
-              <div class="arch-node-desc">WeChat Pay · Alipay · AdaPay · refunds through the original channel</div>
+              <div class="arch-node-desc">WeChat Pay · Alipay · AdaPay · refunds via the original channel</div>
             </div>
             <div class="arch-node arch-node-sm">
               <div class="arch-node-kicker">WeChat ecosystem</div>
-              <div class="arch-node-desc">Login · Order Centre · WeCom sign-in for staff · platform compliance</div>
+              <div class="arch-node-desc">Login · Order Centre · WeCom staff sign-in · compliance</div>
             </div>
             <div class="arch-node arch-node-sm">
               <div class="arch-node-kicker">Business systems</div>
-              <div class="arch-node-desc">Hupun ERP order push · store platform sync · SMS notifications</div>
+              <div class="arch-node-desc">Hupun ERP · store platform sync · SMS notifications</div>
             </div>
             <div class="arch-node arch-node-sm">
               <div class="arch-node-kicker">Cloud</div>
-              <div class="arch-node-desc">Alibaba Cloud hosting, media storage and video transcoding · HTTPS · CDN</div>
+              <div class="arch-node-desc">Alibaba Cloud hosting · media storage · video · HTTPS · CDN</div>
             </div>
           </div>
         </section>
@@ -201,97 +237,79 @@
       </div>
 
       <div class="container">
-        <div class="bento">
+        <div class="bento bento-lite">
           <article class="tile tile-4 reveal">
             <div class="tile-top">
-              <span class="tile-kicker">Integration &amp; implementation</span>
+              <span class="tile-icon"><svg><use href="#i-link"/></svg></span>
               <span class="tile-metric">11 partners</span>
             </div>
+            <span class="tile-kicker">Integration &amp; implementation</span>
             <h3>Eleven partner systems. One working platform.</h3>
-            <p>
-              Three payment providers, WeChat sign-in and Order Centre, WeCom single sign-on for staff, an ERP
-              and a store platform for fulfilment, and Alibaba Cloud for SMS, media and video. For each one the
-              routine was the same: read the API document and the contract, prove it in a sandbox, implement
-              the signing scheme when no SDK existed, then handle the parts that break in production — late
-              callbacks, retries, idempotency, refunds — and write down how it works for whoever comes next.
-            </p>
+            <ul class="chips" aria-label="Systems integrated">
+              <li>WeChat Pay</li><li>Alipay</li><li>AdaPay</li><li>WeChat Login</li><li>WeChat Order Centre</li>
+              <li>WeCom SSO</li><li>Hupun ERP</li><li>Store platform sync</li><li>Aliyun SMS</li><li>Aliyun OSS</li><li>Aliyun Video</li>
+            </ul>
+            <p>Read the API doc and the contract, prove it in a sandbox, handle what breaks in production, write down how it works.</p>
           </article>
 
           <article class="tile tile-2 reveal" data-delay="1">
             <div class="tile-top">
-              <span class="tile-kicker">Discovery &amp; requirements</span>
+              <span class="tile-icon"><svg><use href="#i-bubbles"/></svg></span>
               <span class="tile-metric">17 areas</span>
             </div>
+            <span class="tile-kicker">Discovery &amp; requirements</span>
             <h3>Turning a conversation into a scope.</h3>
-            <p>
-              The owner described goals, not features. I mapped how members, dealers, orders and money
-              actually moved, then shaped that into 17 product areas with a phased plan — storefront first,
-              loyalty and dealer tools next, content and training after.
-            </p>
+            <p>Goals from the owner became 17 product areas and a phased plan — storefront first.</p>
           </article>
 
           <article class="tile tile-2 reveal">
             <div class="tile-top">
-              <span class="tile-kicker">Go-live &amp; support</span>
+              <span class="tile-icon"><svg><use href="#i-check"/></svg></span>
               <span class="tile-metric">0 downtime</span>
             </div>
+            <span class="tile-kicker">Go-live &amp; support</span>
             <h3>Launch it. Then answer the phone.</h3>
-            <p>
-              A readiness checklist before launch; health checks, runbooks and audit logs after. When the
-              production database had to move, I planned it for zero downtime because dealers place orders
-              during business hours. First line of support for the client's staff ever since.
-            </p>
+            <p>Readiness checklist, health checks, runbooks — and a database move nobody noticed.</p>
           </article>
 
           <article class="tile tile-2 reveal" data-delay="1">
             <div class="tile-top">
-              <span class="tile-kicker">Enablement &amp; training</span>
+              <span class="tile-icon"><svg><use href="#i-book"/></svg></span>
               <span class="tile-metric">16 docs</span>
             </div>
+            <span class="tile-kicker">Enablement &amp; training</span>
             <h3>Written so I'm not needed.</h3>
-            <p>
-              An illustrated operations guide that maps every Mini Program screen to where staff change it,
-              sixteen operational documents, and structured feedback rounds that went back out as prioritised
-              releases — so the client runs day-to-day changes without a developer.
-            </p>
+            <p>An illustrated operations guide and sixteen documents; staff make day-to-day changes themselves.</p>
           </article>
 
           <article class="tile tile-2 reveal" data-delay="2">
             <div class="tile-top">
-              <span class="tile-kicker">Delivery &amp; iteration</span>
+              <span class="tile-icon"><svg><use href="#i-loop"/></svg></span>
               <span class="tile-metric">50 releases</span>
             </div>
+            <span class="tile-kicker">Delivery &amp; iteration</span>
             <h3>Ship small. Ship often.</h3>
-            <p>
-              Fifty releases in six months, each small enough to reverse, each with release notes the client
-              could read. Small steps let the business say "not quite" while it is still cheap.
-            </p>
+            <p>Fifty releases in six months, each small enough to reverse, each with notes the client could read.</p>
           </article>
 
           <article class="tile tile-3 reveal">
             <div class="tile-top">
-              <span class="tile-kicker">Compliance &amp; platform administration</span>
+              <span class="tile-icon"><svg><use href="#i-shield"/></svg></span>
               <span class="tile-metric">paperwork included</span>
             </div>
-            <h3>The unglamorous work that blocks launches.</h3>
-            <p>
-              WeChat platform requirements (real-name verification, phone-login compliance changes), a Mini
-              Program entity-change filing, pre-packaged food seller registration, domain, HTTPS and CDN
-              set-up. Someone has to read the rules and file the forms; I did.
-            </p>
+            <span class="tile-kicker">Compliance &amp; platform administration</span>
+            <h3>The paperwork that blocks launches.</h3>
+            <p>WeChat compliance, entity filings, food-seller registration, domain and HTTPS. Someone has to read the rules and file the forms.</p>
           </article>
 
           <article class="tile tile-3 reveal" data-delay="1">
             <div class="tile-top">
-              <span class="tile-kicker">Customer-facing communication</span>
+              <span class="tile-icon"><svg><use href="#i-globe"/></svg></span>
               <span class="tile-metric">EN · 中文</span>
             </div>
+            <span class="tile-kicker">Customer-facing communication</span>
             <h3>Two languages, four audiences.</h3>
-            <p>
-              Worked remotely from Australia with a China-based owner, their staff, their accountant and their
-              vendors' engineers — in English and Mandarin, in writing and in meetings. Different audiences got
-              different documents, not the same one.
-            </p>
+            <p>Owner, staff, accountant and vendor engineers — in English and Mandarin, remotely from Australia.</p>
           </article>
         </div>
       </div>
@@ -303,51 +321,94 @@
         <p class="eyebrow reveal">Judgement</p>
         <h2 class="section-title reveal" data-delay="1">Decisions that mattered.</h2>
         <p class="section-lead reveal" data-delay="2">
-          Four calls that shaped the product more than any feature did — what the problem was, what I decided,
-          and what happened.
+          Four calls that shaped the product more than any feature did.
         </p>
       </div>
 
       <div class="container">
         <div class="cards-2">
           <article class="decision reveal">
-            <span class="decision-kicker">Self-service over dependency</span>
+            <div class="decision-head">
+              <span class="decision-icon"><svg><use href="#i-layout"/></svg></span>
+              <span class="decision-kicker">Self-service over dependency</span>
+            </div>
             <h3>A page builder, so marketing never waits for a developer.</h3>
-            <dl>
-              <dt>Problem</dt><dd>Every campaign meant a new homepage layout, and every layout meant a request to whoever could code — days of delay for a banner.</dd>
-              <dt>Decision</dt><dd>Build a drag-and-drop page builder into the console instead of coding pages on request. It cost more upfront and was the biggest single piece of the project.</dd>
-              <dt>Result</dt><dd>The marketing team publishes campaigns and landing pages themselves, with no developer in the loop.</dd>
-            </dl>
+            <div class="shift">
+              <div class="shift-col"><span class="shift-label">Before</span><p>Every banner was a request to whoever could code. Days of delay.</p></div>
+              <span class="shift-arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span>
+              <div class="shift-col shift-after"><span class="shift-label">After</span><p>Marketing publishes campaigns and landing pages itself.</p></div>
+            </div>
+            <details class="more">
+              <summary><span class="more-icon"><svg><use href="#i-plus"/></svg></span>The full story</summary>
+              <dl>
+                <dt>Problem</dt><dd>Every campaign meant a new homepage layout, and every layout meant a request to whoever could code — days of delay for a banner.</dd>
+                <dt>Decision</dt><dd>Build a drag-and-drop page builder into the console instead of coding pages on request. It cost more upfront and was the biggest single piece of the project.</dd>
+                <dt>Result</dt><dd>The marketing team publishes campaigns and landing pages themselves, with no developer in the loop.</dd>
+              </dl>
+            </details>
           </article>
 
           <article class="decision reveal" data-delay="1">
-            <span class="decision-kicker">Configuration over code</span>
+            <div class="decision-head">
+              <span class="decision-icon"><svg><use href="#i-sliders"/></svg></span>
+              <span class="decision-kicker">Configuration over code</span>
+            </div>
             <h3>Commission rules the business can change itself.</h3>
-            <dl>
-              <dt>Problem</dt><dd>The incentive scheme — what commissions are based on, when they pay out, who funds level-difference awards — was still being negotiated while the platform was being built.</dd>
-              <dt>Decision</dt><dd>Treat the rules as settings, not code. Every variable the owner might change became a switch in the console, with reversal built in for mistakes.</dd>
-              <dt>Result</dt><dd>Changing the incentive scheme is a setting in the console, not a software release — and a mistake can be reversed.</dd>
-            </dl>
+            <div class="shift">
+              <div class="shift-col"><span class="shift-label">Before</span><p>The incentive scheme was still being negotiated while the platform was built.</p></div>
+              <span class="shift-arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span>
+              <div class="shift-col shift-after"><span class="shift-label">After</span><p>Rules are settings in the console — reversible, no release needed.</p></div>
+            </div>
+            <details class="more">
+              <summary><span class="more-icon"><svg><use href="#i-plus"/></svg></span>The full story</summary>
+              <dl>
+                <dt>Problem</dt><dd>What commissions are based on, when they pay out, who funds level-difference awards — all still being negotiated while the platform was being built.</dd>
+                <dt>Decision</dt><dd>Treat the rules as settings, not code. Every variable the owner might change became a switch in the console, with reversal built in for mistakes.</dd>
+                <dt>Result</dt><dd>Changing the incentive scheme is a setting, not a software release — and a mistake can be reversed.</dd>
+              </dl>
+            </details>
           </article>
 
           <article class="decision reveal">
-            <span class="decision-kicker">Risk over convenience</span>
-            <h3>A database migration with no downtime — because dealers work in the daytime.</h3>
-            <dl>
-              <dt>Problem</dt><dd>Production data lived in files and had to move to a proper database. The easy way was a maintenance window; dealers place orders throughout the day and the owner did not want to tell them to stop.</dd>
-              <dt>Decision</dt><dd>Run both stores side by side and switch over per data type behind a setting that could be reversed instantly — slower to build, safe to fail.</dd>
-              <dt>Result</dt><dd>Nobody noticed. Zero downtime, no records lost, and a rollback switch ready if anything had gone wrong.</dd>
-            </dl>
+            <div class="decision-head">
+              <span class="decision-icon"><svg><use href="#i-database"/></svg></span>
+              <span class="decision-kicker">Risk over convenience</span>
+            </div>
+            <h3>A database migration with no downtime.</h3>
+            <div class="shift">
+              <div class="shift-col"><span class="shift-label">Before</span><p>Data in files. The easy fix was a maintenance window — while dealers were placing orders.</p></div>
+              <span class="shift-arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span>
+              <div class="shift-col shift-after"><span class="shift-label">After</span><p>Both stores ran side by side, switched per data type. Nobody noticed.</p></div>
+            </div>
+            <details class="more">
+              <summary><span class="more-icon"><svg><use href="#i-plus"/></svg></span>The full story</summary>
+              <dl>
+                <dt>Problem</dt><dd>Production data lived in files and had to move to a proper database. Dealers place orders throughout the day and the owner did not want to tell them to stop.</dd>
+                <dt>Decision</dt><dd>Run both stores side by side and switch over per data type behind a setting that could be reversed instantly — slower to build, safe to fail.</dd>
+                <dt>Result</dt><dd>Zero downtime, no records lost, and a rollback switch ready if anything had gone wrong.</dd>
+              </dl>
+            </details>
           </article>
 
           <article class="decision reveal" data-delay="1">
-            <span class="decision-kicker">Automate the exception</span>
-            <h3>Refund late payments automatically instead of reconciling them by hand.</h3>
-            <dl>
-              <dt>Problem</dt><dd>Occasionally a customer cancelled and the payment arrived seconds later anyway. Each case became a support ticket, a manual refund and a note for the accountant.</dd>
-              <dt>Decision</dt><dd>Detect any payment that lands against a non-pending order and refund it through the original channel, with a ledger entry — no human in the loop unless it fails.</dd>
-              <dt>Result</dt><dd>No more manual refunds for late payments, and the books reconcile without anyone touching them.</dd>
-            </dl>
+            <div class="decision-head">
+              <span class="decision-icon"><svg><use href="#i-refund"/></svg></span>
+              <span class="decision-kicker">Automate the exception</span>
+            </div>
+            <h3>Late payments refund themselves.</h3>
+            <div class="shift">
+              <div class="shift-col"><span class="shift-label">Before</span><p>A payment landing after a cancellation meant a ticket, a manual refund and a note for the accountant.</p></div>
+              <span class="shift-arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span>
+              <div class="shift-col shift-after"><span class="shift-label">After</span><p>Detected and refunded through the original channel, with a ledger entry. No human needed.</p></div>
+            </div>
+            <details class="more">
+              <summary><span class="more-icon"><svg><use href="#i-plus"/></svg></span>The full story</summary>
+              <dl>
+                <dt>Problem</dt><dd>Occasionally a customer cancelled and the payment arrived seconds later anyway. Each case became a support ticket, a manual refund and a note for the accountant.</dd>
+                <dt>Decision</dt><dd>Detect any payment that lands against a non-pending order and refund it through the original channel, with a ledger entry — no human in the loop unless it fails.</dd>
+                <dt>Result</dt><dd>No more manual refunds for late payments, and the books reconcile without anyone touching them.</dd>
+              </dl>
+            </details>
           </article>
         </div>
       </div>
@@ -359,9 +420,8 @@
         <p class="eyebrow reveal">Also shipped</p>
         <h2 class="section-title reveal" data-delay="1">Paper forms to a live map.</h2>
         <p class="section-lead reveal" data-delay="2">
-          Sales staff in 20 countries were collecting customer details on paper. In ten weeks that became a
-          phone form anyone can hand to a customer, a dashboard the owner can check at any time, and a feed
-          that keeps the main platform in step.
+          Sales staff in 20 countries collected customer details on paper. Ten weeks later: a phone form
+          anyone can hand to a customer, a live map for the owner, and a feed that keeps the main platform in step.
         </p>
         <p class="meta-line reveal" data-delay="3">
           <span>May — Jul 2026</span>
@@ -371,23 +431,45 @@
       </div>
 
       <div class="container">
-        <div class="cards-3">
-          <article class="card reveal">
-            <div class="card-num">3,423</div>
-            <h3>districts, no typing.</h3>
-            <p>Country-aware fields, a full province / city / district picker, ID photo capture and a short product-feedback survey — designed to be completed at a sales counter, on the customer's own phone.</p>
-          </article>
-          <article class="card reveal" data-delay="1">
-            <div class="card-num">1 glance</div>
-            <h3>instead of a spreadsheet.</h3>
-            <p>A China map that drills from country to province to city to district, quick time filters, search by name / phone / ID, and CSV export. The owner sees where customers are without asking anyone.</p>
-          </article>
-          <article class="card reveal" data-delay="2">
-            <div class="card-num">1 record</div>
-            <h3>per customer, across two systems.</h3>
-            <p>Registrations flow to the main platform automatically. Matching runs on ID document first, then phone; anyone unmatched is claimed the moment they log in to the Mini Program — so no duplicates, ever.</p>
-          </article>
+        <div class="showcase">
+          <figure class="showcase-phone reveal reveal-shot">
+            <div class="device device-phone">
+              <picture>
+                <source srcset="img/registration-form.webp" type="image/webp">
+                <img src="img/registration-form.jpg" width="780" height="1688" alt="The customer registration form on a phone: name, country, phone, address picker, supplier details and a short survey." loading="lazy">
+              </picture>
+            </div>
+            <figcaption>The form, on the customer's own phone.</figcaption>
+          </figure>
+
+          <figure class="showcase-map reveal reveal-shot" data-delay="1">
+            <div class="device device-browser">
+              <div class="device-bar"><span></span><span></span><span></span><em>registration · dashboard</em></div>
+              <picture>
+                <source media="(max-width: 734px)" srcset="img/registration-dashboard-m.webp" type="image/webp" width="1100" height="971">
+                <source media="(max-width: 734px)" srcset="img/registration-dashboard-m.jpg" type="image/jpeg" width="1100" height="971">
+                <source srcset="img/registration-dashboard.webp" type="image/webp">
+                <img src="img/registration-dashboard.jpg" width="1800" height="1125" alt="The owner's dashboard: total customers, quick time filters and a map of China shaded by how many customers each province has." loading="lazy">
+              </picture>
+            </div>
+            <figcaption>The owner's dashboard — click a province to drill down to city and district. Demo data shown.</figcaption>
+          </figure>
         </div>
+
+        <ul class="facts reveal">
+          <li>
+            <span class="fact-num">3,423</span>
+            <span class="fact-text">districts in a tap-through picker — nothing to type, nothing to misspell.</span>
+          </li>
+          <li>
+            <span class="fact-num">1 glance</span>
+            <span class="fact-text">replaces the spreadsheet — country, province, city, district, with time filters and export.</span>
+          </li>
+          <li>
+            <span class="fact-num">1 record</span>
+            <span class="fact-text">per customer across two systems — matched on ID document, then phone. No duplicates.</span>
+          </li>
+        </ul>
       </div>
     </section>
 
@@ -397,41 +479,41 @@
         <p class="eyebrow reveal">Approach</p>
         <h2 class="section-title reveal" data-delay="1">How I work with a business.</h2>
         <p class="section-lead reveal" data-delay="2">
-          Habits from a year of being the only person between an owner's ambitions and a working product.
+          Habits from a year as the only person between an owner's ambitions and a working product.
         </p>
       </div>
 
       <div class="container">
-        <ol class="process reveal">
+        <ol class="process process-lite reveal">
           <li>
             <span class="process-num">01</span>
             <h3>Listen for the problem, not the feature</h3>
-            <p>"We need a coupon system" usually means "our dealers are losing customers to price". Solve the second thing.</p>
+            <p>"We need coupons" usually means "dealers are losing customers to price".</p>
           </li>
           <li>
             <span class="process-num">02</span>
             <h3>Write it down before building it</h3>
-            <p>Scope, decisions and trade-offs go into documents people can disagree with. Sixteen of them, plus a guide, on this project alone.</p>
+            <p>Scope and trade-offs go into documents people can disagree with.</p>
           </li>
           <li>
             <span class="process-num">03</span>
             <h3>Ship small, ship often</h3>
-            <p>Fifty releases beat one big launch. Each one is a chance for the business to say "not quite" while it is still cheap.</p>
+            <p>Fifty releases beat one big launch. "Not quite" stays cheap.</p>
           </li>
           <li>
             <span class="process-num">04</span>
             <h3>Make the business self-sufficient</h3>
-            <p>Page builder, configurable rules, an operations guide. Success is when the client stops needing to call me.</p>
+            <p>Success is when the client stops needing to call me.</p>
           </li>
           <li>
             <span class="process-num">05</span>
             <h3>Respect the money and the data</h3>
-            <p>Payments reconcile, refunds are traceable, migrations don't lose records, and sensitive information is masked by default.</p>
+            <p>Payments reconcile, refunds are traceable, migrations lose nothing.</p>
           </li>
           <li>
             <span class="process-num">06</span>
             <h3>Own the outcome</h3>
-            <p>Not the ticket, the outcome. If the launch slips because a form wasn't filed, filing the form is my job too.</p>
+            <p>If a missing form blocks the launch, filing the form is my job too.</p>
           </li>
         </ol>
       </div>
@@ -444,8 +526,7 @@
         <h2 class="section-title reveal" data-delay="1">Still technical enough to be dangerous.</h2>
         <p class="section-lead reveal" data-delay="2">
           I built all of this myself, so I can talk to a customer's engineers as a peer, evaluate a vendor on
-          substance, debug an integration from the logs, and prototype when a slide isn't enough. The full
-          engineering write-up — architecture, testing, security, annotated code — is one click away.
+          substance, and debug an integration from the logs. The full engineering write-up is one click away.
         </p>
         <p class="stack-line reveal" data-delay="3">
           Node.js · PostgreSQL · REST APIs · OAuth · Webhooks · WeChat Mini Program · WeChat Pay · Alipay · AdaPay · Alibaba Cloud · Docker · Nginx · DNS / TLS · GitHub Actions · 300+ automated tests
@@ -478,7 +559,7 @@
   <footer class="footer">
     <div class="container footer-inner">
       <span>© 2026 Howie Wang</span>
-      <span>Designed and built by hand. No framework, no template — just HTML, CSS and 4 KB of JavaScript.</span>
+      <span>Designed and built by hand. No framework, no template — just HTML, CSS and 4 KB of JavaScript. Screenshots show demo data.</span>
     </div>
   </footer>
 
