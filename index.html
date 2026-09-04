@@ -3,14 +3,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>Howie Wang — Full-Stack Engineer</title>
-  <meta name="description" content="Howie Wang is a full-stack engineer in Canberra who designs, builds, tests, ships and operates production systems end to end — Node.js, PostgreSQL, WeChat Mini Programs and Alibaba Cloud.">
+  <title>Howie Wang — From first conversation to live product</title>
+  <meta name="description" content="Howie Wang is a product-minded technologist in Canberra who turns business needs into shipped, running products — discovery, scoping, build, launch and operations, end to end.">
   <meta name="author" content="Howie Wang">
   <meta name="theme-color" content="#fbfbfd">
 
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Howie Wang — Full-Stack Engineer">
-  <meta property="og:description" content="One engineer. The whole system. A production commerce platform — 126K lines, 300+ tests, 37 migrations, 11 integrations — built solo.">
+  <meta property="og:title" content="Howie Wang — From first conversation to live product">
+  <meta property="og:description" content="Product-minded technologist. A commerce platform for a biotech company: 50 releases, 800+ members, 17 product areas, 11 partner integrations — discovery to operations, one person.">
   <meta name="twitter:card" content="summary">
 
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231d1d1f'/%3E%3Ctext x='32' y='41' text-anchor='middle' font-family='-apple-system,Helvetica,Arial,sans-serif' font-size='26' font-weight='600' fill='%23fff'%3EHW%3C/text%3E%3C/svg%3E">
@@ -28,11 +28,11 @@
       <a class="nav-brand" href="#top" aria-label="Howie Wang — home">Howie Wang</a>
 
       <nav class="nav-links" aria-label="Primary">
-        <a href="#work">Work</a>
-        <a href="#engineering">Engineering</a>
-        <a href="#code">Code</a>
-        <a href="#stack">Stack</a>
-        <a href="#process">Process</a>
+        <a href="#work">Case study</a>
+        <a href="#capabilities">Capabilities</a>
+        <a href="#decisions">Decisions</a>
+        <a href="#approach">Approach</a>
+        <a href="engineering/">Engineering</a>
         <a href="#contact">Contact</a>
       </nav>
 
@@ -45,14 +45,12 @@
     </div>
   </header>
 
-  <!-- Kept outside <header>: its backdrop-filter would otherwise become the
-       containing block for this fixed-position panel. -->
   <nav class="nav-mobile" id="mobileMenu" aria-label="Mobile">
-    <a href="#work">Work</a>
-    <a href="#engineering">Engineering</a>
-    <a href="#code">Code</a>
-    <a href="#stack">Stack</a>
-    <a href="#process">Process</a>
+    <a href="#work">Case study</a>
+    <a href="#capabilities">Capabilities</a>
+    <a href="#decisions">Decisions</a>
+    <a href="#approach">Approach</a>
+    <a href="engineering/">Engineering deep-dive</a>
     <a href="#contact">Contact</a>
     <a href="Howie_Wang_Resume.pdf" target="_blank" rel="noopener">Résumé (PDF)</a>
   </nav>
@@ -62,134 +60,142 @@
     <!-- ============================== HERO ============================== -->
     <section class="hero">
       <div class="container-narrow">
-        <p class="eyebrow reveal">Full-Stack Engineer &nbsp;·&nbsp; Canberra, Australia</p>
-        <h1 class="hero-title reveal" data-delay="1">
-          One engineer.<br>
-          <span class="muted">The whole system.</span>
+        <p class="eyebrow reveal">Product-minded technologist &nbsp;·&nbsp; Canberra, Australia</p>
+        <h1 class="hero-title hero-title--long reveal" data-delay="1">
+          From first conversation<br>
+          <span class="muted">to live product.</span>
         </h1>
         <p class="hero-lead reveal" data-delay="2">
-          I design, build, test, ship and operate production software end to end —
-          Node.js APIs, PostgreSQL, WeChat Mini Programs and Alibaba Cloud infrastructure.
-          Most recently: a complete commerce platform for a biotech company, taken from an
-          empty repository to paying customers, alone.
+          I work directly with business owners to turn what they need into products people actually use —
+          scoping, designing, building, launching and running them. Most recently: a commerce platform for a
+          biotech company, now serving 800+ members and its dealer network, delivered end to end by one person.
         </p>
         <div class="hero-cta reveal" data-delay="3">
-          <a class="btn" href="#work">See the work</a>
+          <a class="btn" href="#work">Read the case study</a>
           <a class="link-arrow" href="Howie_Wang_Resume.pdf" target="_blank" rel="noopener">Download résumé</a>
         </div>
       </div>
 
       <div class="stats container reveal" data-delay="4" aria-label="Key numbers">
         <div class="stat">
-          <div class="stat-value"><span data-count="126">126</span>K</div>
-          <div class="stat-label">lines of hand-written code</div>
+          <div class="stat-value"><span data-count="50">50</span></div>
+          <div class="stat-label">releases shipped in six months</div>
         </div>
         <div class="stat">
-          <div class="stat-value"><span data-count="300">300</span>+</div>
-          <div class="stat-label">automated tests, green in CI</div>
+          <div class="stat-value"><span data-count="800">800</span>+</div>
+          <div class="stat-label">members on the platform</div>
         </div>
         <div class="stat">
-          <div class="stat-value"><span data-count="37">37</span></div>
-          <div class="stat-label">database migrations in production</div>
+          <div class="stat-value"><span data-count="17">17</span></div>
+          <div class="stat-label">product areas scoped and delivered</div>
         </div>
         <div class="stat">
-          <div class="stat-value"><span data-count="100">100</span></div>
-          <div class="stat-label">UI pages shipped across 3 surfaces</div>
+          <div class="stat-value"><span data-count="20">20</span></div>
+          <div class="stat-label">countries served by the registration tool</div>
         </div>
         <div class="stat">
           <div class="stat-value"><span data-count="11">11</span></div>
-          <div class="stat-label">third-party integrations</div>
+          <div class="stat-label">partner integrations</div>
         </div>
         <div class="stat stat-accent">
           <div class="stat-value"><span data-count="1">1</span></div>
-          <div class="stat-label">engineer</div>
+          <div class="stat-label">person, discovery to operations</div>
         </div>
       </div>
     </section>
 
-    <!-- ============================== WORK ============================== -->
+    <!-- ============================== CASE STUDY ============================== -->
     <section class="section" id="work">
       <div class="container-narrow">
-        <p class="eyebrow reveal">Featured work</p>
+        <p class="eyebrow reveal">Case study</p>
         <h2 class="section-title reveal" data-delay="1">YuanQiPai.</h2>
         <p class="section-lead reveal" data-delay="2">
-          An integrated business platform for a biotech company, serving a dealer network and
-          consumer members: admin console, REST API, WeChat Mini Program and a stand-alone customer
-          registration system. I owned every layer — architecture, code, tests, infrastructure and
-          the production launch.
+          A biotech company sells health products through a dealer network and directly to consumers on WeChat.
+          It ran on disconnected tools: no single view of members, dealers, orders or commissions, and every
+          marketing change needed outside help. I was the only technical person — and the single point of
+          contact between the owner and the platform, from the first conversation to day-to-day operations.
         </p>
         <p class="meta-line reveal" data-delay="3">
           <span>2025 — Present</span>
-          <span>Sole developer</span>
-          <span>Node.js · Express · PostgreSQL · WeChat Mini Program · Alibaba Cloud</span>
+          <span>Product owner &amp; sole builder</span>
+          <span>Consumers · Dealers · Staff</span>
         </p>
       </div>
 
-      <!-- Architecture diagram -->
-      <div class="container reveal" data-delay="2">
-        <section class="arch" aria-labelledby="archCaption">
-          <div class="arch-caption" id="archCaption">System architecture</div>
+      <div class="container">
+        <section class="pipeline pipeline-phases reveal" aria-labelledby="phasesCaption">
+          <div class="pipeline-caption" id="phasesCaption">How the work unfolded</div>
+          <ol class="pipeline-steps">
+            <li><span class="pipeline-step">Discover</span><span class="pipeline-desc">Sat with the owner and staff; mapped how members, dealers, orders and commissions actually flowed</span></li>
+            <li><span class="pipeline-step">Scope</span><span class="pipeline-desc">Turned goals into 17 product areas and a phased plan: launch a storefront first, grow from there</span></li>
+            <li><span class="pipeline-step">Build &amp; integrate</span><span class="pipeline-desc">Four products on one platform; 11 partners for payments, cloud, ERP and the WeChat ecosystem</span></li>
+            <li><span class="pipeline-step">Launch</span><span class="pipeline-desc">WeChat platform compliance, entity filings, domain and HTTPS, a launch-readiness checklist</span></li>
+            <li><span class="pipeline-step">Operate &amp; iterate</span><span class="pipeline-desc">Structured feedback rounds turned into 50 releases; an illustrated guide so staff run it themselves</span></li>
+          </ol>
+        </section>
+
+        <section class="arch reveal" aria-labelledby="archCaption">
+          <div class="arch-caption" id="archCaption">What was built — one platform, four products</div>
 
           <div class="arch-row arch-row-3">
             <div class="arch-node">
-              <div class="arch-node-kicker">Admin Console</div>
-              <div class="arch-node-title">42 pages</div>
+              <div class="arch-node-kicker">Staff console</div>
+              <div class="arch-node-title">42 screens</div>
               <div class="arch-node-desc">Drag-and-drop page builder, orders &amp; after-sales, members &amp; tiers, coupons, finance reconciliation, anti-counterfeit traceability.</div>
             </div>
             <div class="arch-node">
               <div class="arch-node-kicker">WeChat Mini Program</div>
-              <div class="arch-node-title">58 pages</div>
-              <div class="arch-node-desc">Dynamic home-page renderer, catalogue &amp; cart, in-app payment, points wallet &amp; withdrawals, team hierarchy, scan-to-verify.</div>
+              <div class="arch-node-title">58 screens</div>
+              <div class="arch-node-desc">Storefront and cart, in-app payment, points wallet &amp; withdrawals, dealer and team hierarchy, scan-to-verify authenticity.</div>
             </div>
             <div class="arch-node">
-              <div class="arch-node-kicker">Registration System</div>
-              <div class="arch-node-title">Stand-alone</div>
-              <div class="arch-node-desc">Public mobile form for 20 countries, admin back-office with an ECharts map dashboard, independently deployed.</div>
+              <div class="arch-node-kicker">Registration tool</div>
+              <div class="arch-node-title">20 countries</div>
+              <div class="arch-node-desc">A phone form that replaced paper for offline sales, with a map dashboard for the owner. Independently deployed.</div>
             </div>
           </div>
 
-          <div class="arch-link"><span>HTTPS · JSON · JWT</span></div>
+          <div class="arch-link"><span>one shared platform</span></div>
 
           <div class="arch-row">
             <div class="arch-node arch-node-core">
-              <div class="arch-node-kicker">Node.js · Express API</div>
-              <div class="arch-node-title">17 route modules · 33 services</div>
-              <div class="arch-node-desc">JWT + RBAC at the endpoint level · layered middleware for auth, tiered rate limiting and error handling · payment abstraction · commission engine · audit log.</div>
+              <div class="arch-node-kicker">The platform behind them</div>
+              <div class="arch-node-title">Membership · Orders · Commissions · Content</div>
+              <div class="arch-node-desc">Role-based access for staff · configurable commission and reward rules · audit trail of sensitive actions · automated refunds · finance exports for the accountant.</div>
             </div>
           </div>
 
-          <div class="arch-link"><span>pg · signed HTTP · SDKs</span></div>
+          <div class="arch-link"><span>partners &amp; infrastructure</span></div>
 
           <div class="arch-row arch-row-4">
             <div class="arch-node arch-node-sm">
-              <div class="arch-node-kicker">PostgreSQL</div>
-              <div class="arch-node-desc">37 incremental migrations · dual-track JSON fallback · seed back-fill</div>
-            </div>
-            <div class="arch-node arch-node-sm">
-              <div class="arch-node-kicker">Alibaba Cloud</div>
-              <div class="arch-node-desc">ECS · OSS direct upload · SMS · MTS video transcoding</div>
-            </div>
-            <div class="arch-node arch-node-sm">
               <div class="arch-node-kicker">Payments</div>
-              <div class="arch-node-desc">WeChat Pay v3 · Alipay · AdaPay · original-channel refunds</div>
+              <div class="arch-node-desc">WeChat Pay · Alipay · AdaPay · refunds through the original channel</div>
             </div>
             <div class="arch-node arch-node-sm">
-              <div class="arch-node-kicker">Ecosystem</div>
-              <div class="arch-node-desc">WeChat Login · WeCom SSO · Order Centre · Hupun ERP · store sync</div>
+              <div class="arch-node-kicker">WeChat ecosystem</div>
+              <div class="arch-node-desc">Login · Order Centre · WeCom sign-in for staff · platform compliance</div>
+            </div>
+            <div class="arch-node arch-node-sm">
+              <div class="arch-node-kicker">Business systems</div>
+              <div class="arch-node-desc">Hupun ERP order push · store platform sync · SMS notifications</div>
+            </div>
+            <div class="arch-node arch-node-sm">
+              <div class="arch-node-kicker">Cloud</div>
+              <div class="arch-node-desc">Alibaba Cloud hosting, media storage and video transcoding · HTTPS · CDN</div>
             </div>
           </div>
         </section>
       </div>
     </section>
 
-    <!-- ============================== ENGINEERING (dark) ============================== -->
-    <section class="section section-dark" id="engineering">
+    <!-- ============================== CAPABILITIES (dark) ============================== -->
+    <section class="section section-dark" id="capabilities">
       <div class="container-narrow">
-        <p class="eyebrow reveal">Under the hood</p>
-        <h2 class="section-title reveal" data-delay="1">Built to survive production.</h2>
+        <p class="eyebrow reveal">What I bring</p>
+        <h2 class="section-title reveal" data-delay="1">Fluent in the business. Fluent in the build.</h2>
         <p class="section-lead reveal" data-delay="2">
-          The interesting problems weren't the features. They were the edge cases that
-          break real money and real data.
+          Most of what made this project work happened outside the code editor.
         </p>
       </div>
 
@@ -197,219 +203,169 @@
         <div class="bento">
           <article class="tile tile-4 reveal">
             <div class="tile-top">
-              <span class="tile-kicker">Payments</span>
-              <span class="tile-metric">3 rails</span>
+              <span class="tile-kicker">Discovery &amp; requirements</span>
+              <span class="tile-metric">17 areas</span>
             </div>
-            <h3>Three payment rails behind one abstraction.</h3>
+            <h3>Turning a conversation into a scope.</h3>
             <p>
-              WeChat Pay v3 (JSAPI / H5), Alipay (PC / JSAPI) and AdaPay share a single payment layer.
-              A complete after-sales state machine handles request → review → original-channel refund.
-              Orphan-payment detection automatically refunds money that lands after an order was
-              cancelled — so a late gateway callback never becomes a support ticket. Orders also
-              surface in WeChat's native Order Centre.
+              The owner described goals, not features: sell through dealers, reward the people who bring in
+              customers, prove products are genuine, stop paying an agency for every homepage change. I mapped
+              how members, dealers, orders and money actually moved, then shaped that into 17 product areas with
+              a phased plan — storefront first, loyalty and dealer tools next, content and training after that.
+              Feedback came back as structured lists and went out as prioritised release notes.
             </p>
           </article>
 
           <article class="tile tile-2 reveal" data-delay="1">
             <div class="tile-top">
-              <span class="tile-kicker">Data</span>
-              <span class="tile-metric">0 downtime</span>
+              <span class="tile-kicker">Delivery &amp; iteration</span>
+              <span class="tile-metric">50 releases</span>
             </div>
-            <h3>A database migration nobody noticed.</h3>
+            <h3>Ship small. Ship often.</h3>
             <p>
-              PG-primary, JSON-fallback dual-track reads moved production from file storage to PostgreSQL
-              without a maintenance window. 37 incremental migrations apply themselves at boot; empty
-              tables back-fill from seed data.
+              Fifty releases in six months, each small enough to reverse. When the production database had to
+              move, I planned it for zero downtime because dealers place orders during business hours.
             </p>
           </article>
 
           <article class="tile tile-2 reveal">
             <div class="tile-top">
-              <span class="tile-kicker">Security</span>
-              <span class="tile-metric">timing-safe</span>
+              <span class="tile-kicker">Systems &amp; integrations</span>
+              <span class="tile-metric">11 partners</span>
             </div>
-            <h3>Defence in depth, not a checkbox.</h3>
+            <h3>I can read the API doc — and the contract.</h3>
             <p>
-              Helmet headers, fine-grained CORS, tiered rate limits for login / submission / API, RBAC on
-              every endpoint, PII masking on list responses, audit trails with IP and operator, and
-              constant-time token comparison via <code>crypto.timingSafeEqual</code>.
+              Evaluated and integrated three payment providers, an ERP, a store platform, cloud storage,
+              SMS and the WeChat ecosystem. I can sit between a vendor's engineers and a business owner and
+              make sure both leave the meeting with the same understanding.
             </p>
           </article>
 
           <article class="tile tile-2 reveal" data-delay="1">
             <div class="tile-top">
-              <span class="tile-kicker">Integrations</span>
-              <span class="tile-metric">11 APIs</span>
+              <span class="tile-kicker">Data &amp; reporting</span>
+              <span class="tile-metric">4 levels</span>
             </div>
-            <h3>Signatures written by hand.</h3>
+            <h3>Numbers the accountant can use.</h3>
             <p>
-              WeChat Pay, Alipay, AdaPay, WeChat Login, WeCom SSO, WeChat Order Centre, Aliyun SMS / OSS / MTS,
-              Hupun ERP and a store platform. Where an SDK was heavy or missing I implemented the signing
-              scheme directly — HMAC-SHA1 for Aliyun MTS, MD5 for Hupun, HMAC-SHA256 for store sync.
+              Finance reconciliation and downloadable reports, member and customer exports, and a map
+              dashboard that drills from country to province to city to district — built for the people who
+              ask the questions, not for the people who write the queries.
             </p>
           </article>
 
           <article class="tile tile-2 reveal" data-delay="2">
             <div class="tile-top">
-              <span class="tile-kicker">Quality</span>
-              <span class="tile-metric">300+ tests</span>
+              <span class="tile-kicker">Documentation</span>
+              <span class="tile-metric">16 docs</span>
             </div>
-            <h3>Green before it ships.</h3>
+            <h3>Written so I'm not needed.</h3>
             <p>
-              30 Jest suites cover API contracts, refund flows, payment simulation, security and data
-              consistency. GitHub Actions runs the suite and a Docker build on every push to
-              <code>main</code>. ESLint sits at zero errors across the repository.
+              Sixteen operational documents — deployment, environments, security, launch — and an illustrated
+              operations guide that maps every screen of the Mini Program to where staff change it, so the
+              client can run day-to-day changes without a developer.
             </p>
           </article>
 
           <article class="tile tile-3 reveal">
             <div class="tile-top">
-              <span class="tile-kicker">Sync</span>
-              <span class="tile-metric">×30 back-off</span>
+              <span class="tile-kicker">Compliance &amp; platform administration</span>
+              <span class="tile-metric">paperwork included</span>
             </div>
-            <h3>Two systems. One truth.</h3>
+            <h3>The unglamorous work that blocks launches.</h3>
             <p>
-              Registration submissions enqueue instantly and push to the main platform with exponential
-              back-off — up to 30 attempts. Members match on country + ID number, then phone. Unmatched
-              customers become placeholder members that are claimed automatically on their first Mini
-              Program login, so no duplicates are ever created.
+              WeChat platform requirements (real-name verification, phone-login compliance changes), a Mini
+              Program entity-change filing, pre-packaged food seller registration, domain, HTTPS and CDN
+              set-up. Someone has to read the rules and file the forms; I did.
             </p>
           </article>
 
           <article class="tile tile-3 reveal" data-delay="1">
             <div class="tile-top">
-              <span class="tile-kicker">Money</span>
-              <span class="tile-metric">reversible</span>
+              <span class="tile-kicker">Communication</span>
+              <span class="tile-metric">EN · 中文</span>
             </div>
-            <h3>A commission engine the business can tune.</h3>
+            <h3>Two languages, four audiences.</h3>
             <p>
-              Reward base, payout timing, conversion to shopping credit and level-difference awards are
-              all configurable from the console and settled automatically on order completion — with
-              full reversal. Wallet payments split across shopping credit and balance, net of in-flight
-              withdrawals.
+              Worked remotely from Australia with a China-based owner, their staff, their accountant and their
+              vendors' engineers — in English and Mandarin, in writing and in meetings. Different audiences got
+              different documents, not the same one.
             </p>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- ============================== CODE ============================== -->
-    <section class="section" id="code">
+    <!-- ============================== DECISIONS ============================== -->
+    <section class="section" id="decisions">
       <div class="container-narrow">
-        <p class="eyebrow reveal">A closer look</p>
-        <h2 class="section-title reveal" data-delay="1">The details are the design.</h2>
+        <p class="eyebrow reveal">Judgement</p>
+        <h2 class="section-title reveal" data-delay="1">Decisions that mattered.</h2>
         <p class="section-lead reveal" data-delay="2">
-          Two small pieces from the codebase that say more than a feature list.
+          Four calls that shaped the product more than any feature did — what the problem was, what I decided,
+          and what happened.
         </p>
       </div>
 
       <div class="container">
-        <div class="split reveal">
-          <div class="split-text">
-            <span class="split-kicker">Dual-track reads</span>
-            <h3>When “success” is the bug.</h3>
-            <p>
-              After a migration a PostgreSQL table can be empty while the JSON store still holds production
-              data. A query that “succeeds” with zero rows, if trusted, makes the whole admin console look
-              wiped. The dual-track layer decides — per domain — when PostgreSQL is authoritative and when
-              to fall back, so the rollout could be staged, and reversed, with one environment variable.
-            </p>
-          </div>
-          <div class="code-window" aria-label="Excerpt from server/services/dual-track.js">
-            <div class="code-bar"><span></span><span></span><span></span><em>server/services/dual-track.js</em></div>
-<pre><code><span class="c">// PG has rows             → use PG</span>
-<span class="c">// PG table missing        → fall back to JSON, or throw if authoritative</span>
-<span class="c">// PG empty, JSON has data → fall back, or trust PG if authoritative</span>
-<span class="c">//                           (a deleted row can never be "resurrected")</span>
+        <div class="cards-2">
+          <article class="decision reveal">
+            <span class="decision-kicker">Self-service over dependency</span>
+            <h3>A page builder, so marketing never waits for a developer.</h3>
+            <dl>
+              <dt>Problem</dt><dd>Every campaign meant a new homepage layout, and every layout meant a request to whoever could code — days of delay for a banner.</dd>
+              <dt>Decision</dt><dd>Build a drag-and-drop page builder into the console instead of coding pages on request. It cost more upfront and was the biggest single piece of the project.</dd>
+              <dt>Result</dt><dd>The marketing team publishes campaigns and landing pages themselves, with no developer in the loop.</dd>
+            </dl>
+          </article>
 
-<span class="k">function</span> <span class="f">isPgAuthoritative</span>(domain) {
-  <span class="k">if</span> (isTruthyEnv(<span class="s">'PG_JSON_FALLBACK'</span>)) <span class="k">return</span> <span class="b">false</span>; <span class="c">// escape hatch</span>
-  <span class="k">if</span> (isTruthyEnv(<span class="s">'PG_AUTHORITATIVE'</span>)) <span class="k">return</span> <span class="b">true</span>;
-  <span class="k">if</span> (process.env.NODE_ENV === <span class="s">'production'</span>) <span class="k">return</span> <span class="b">true</span>;
-  <span class="k">const</span> list = String(process.env.PG_AUTHORITATIVE_DOMAINS || <span class="s">''</span>)
-    .split(<span class="s">','</span>).map((s) => s.trim()).filter(Boolean);
-  <span class="k">return</span> !!(domain &amp;&amp; list.includes(domain));
-}
+          <article class="decision reveal" data-delay="1">
+            <span class="decision-kicker">Configuration over code</span>
+            <h3>Commission rules the business can change itself.</h3>
+            <dl>
+              <dt>Problem</dt><dd>The incentive scheme — what commissions are based on, when they pay out, who funds level-difference awards — was still being negotiated while the platform was being built.</dd>
+              <dt>Decision</dt><dd>Treat the rules as settings, not code. Every variable the owner might change became a switch in the console, with reversal built in for mistakes.</dd>
+              <dt>Result</dt><dd>Changing the incentive scheme is a setting in the console, not a software release — and a mistake can be reversed.</dd>
+            </dl>
+          </article>
 
-<span class="k">async function</span> <span class="f">loadListPreferPg</span>({ loadPg, loadJson, domain, autoSeed }) {
-  <span class="k">const</span> authoritative = isPgAuthoritative(domain);
-  <span class="k">let</span> pgList;
-  <span class="k">try</span> { pgList = <span class="k">await</span> loadPg(); }
-  <span class="k">catch</span> (err) {
-    <span class="c">// only a missing table may fall back — never a network or auth error</span>
-    <span class="k">if</span> (!isMissingRelation(err) || authoritative) <span class="k">throw</span> err;
-    <span class="k">return</span> normalizeList(loadJson());
-  }
-  <span class="k">if</span> (pgList.length > <span class="n">0</span>) <span class="k">return</span> pgList;
-  <span class="k">const</span> jsonList = normalizeList(loadJson());
-  <span class="k">if</span> (jsonList.length &amp;&amp; autoSeed) <span class="k">await</span> autoSeed(jsonList); <span class="c">// idempotent</span>
-  <span class="k">return</span> authoritative ? pgList : jsonList;
-}</code></pre>
-          </div>
-        </div>
+          <article class="decision reveal">
+            <span class="decision-kicker">Risk over convenience</span>
+            <h3>A database migration with no downtime — because dealers work in the daytime.</h3>
+            <dl>
+              <dt>Problem</dt><dd>Production data lived in files and had to move to a proper database. The easy way was a maintenance window; dealers place orders throughout the day and the owner did not want to tell them to stop.</dd>
+              <dt>Decision</dt><dd>Run both stores side by side and switch over per data type behind a setting that could be reversed instantly — slower to build, safe to fail.</dd>
+              <dt>Result</dt><dd>Nobody noticed. Zero downtime, no records lost, and a rollback switch ready if anything had gone wrong.</dd>
+            </dl>
+          </article>
 
-        <div class="split split-reverse reveal">
-          <div class="split-text">
-            <span class="split-kicker">Orphan payments</span>
-            <h3>Callbacks don't respect order state.</h3>
-            <p>
-              A customer cancels; seconds later the gateway's delayed notification lands and the money is
-              now attached to an order that no longer exists. Instead of a manual reconciliation, the
-              callback path recognises any payment that arrives against a non-pending order and refunds
-              the surplus through the original channel — under a row lock, with a ledger entry, and
-              without ever throwing, so the gateway always receives its acknowledgement.
-            </p>
-          </div>
-          <div class="code-window" aria-label="Condensed excerpt from server/services/orphan-refund.js">
-            <div class="code-bar"><span></span><span></span><span></span><em>server/services/orphan-refund.js · condensed</em></div>
-<pre><code><span class="c">// Runs inside the payment callback. Never throws: a failed refund is</span>
-<span class="c">// logged and retried, so the gateway always gets its ACK.</span>
-
-<span class="k">const</span> SURPLUS_REFUNDABLE = <span class="k">new</span> Set([
-  <span class="s">'cancelled'</span>, <span class="s">'pending_ship'</span>, <span class="s">'shipped'</span>, <span class="s">'pending_receive'</span>,
-  <span class="s">'completed'</span>, <span class="s">'refunded'</span>, <span class="s">'refunding'</span>, <span class="s">'offline_pending_review'</span>
-]);
-
-<span class="k">async function</span> <span class="f">refundOrphanPayment</span>({ Pg, appendLog }, orderId, paymentId) {
-  <span class="k">const</span> payment = <span class="k">await</span> loadPayment(Pg, paymentId);
-  <span class="k">if</span> (payment?.order_id !== orderId) <span class="k">return</span> skip();
-  <span class="k">if</span> (payment.status !== <span class="s">'paid'</span>) <span class="k">return</span> skip();
-
-  <span class="k">const</span> order = <span class="k">await</span> loadOrder(Pg, orderId);
-  <span class="c">// a pending order means this is the first, legitimate payment</span>
-  <span class="k">if</span> (!SURPLUS_REFUNDABLE.has(order.status)) <span class="k">return</span> skip();
-
-  <span class="k">return</span> Pg.withTx(<span class="k">async</span> (client) => {
-    <span class="k">const</span> { rows: [row] } = <span class="k">await</span> client.query(
-      <span class="s">`SELECT amount, status FROM order_payments</span>
-<span class="s">        WHERE id = $1 FOR UPDATE`</span>, [payment.id]);
-    <span class="k">const</span> used = <span class="k">await</span> sumRefundedOrPending(client, payment.id);
-    <span class="k">const</span> remaining = row.amount - used;
-    <span class="k">if</span> (remaining &lt;= <span class="n">0.001</span>) <span class="k">return</span> skip(); <span class="c">// idempotent on replay</span>
-
-    <span class="k">await</span> markRefunded(client, payment.id);
-    <span class="k">await</span> writeLedger(client, order, remaining, <span class="s">'orphan_payment'</span>);
-    <span class="k">return</span> refundViaOriginalChannel(payment, remaining); <span class="c">// wechat | balance</span>
-  }).catch((err) => appendLog(<span class="s">'orphan-refund-failed'</span>, { orderId, err }));
-}</code></pre>
-          </div>
+          <article class="decision reveal" data-delay="1">
+            <span class="decision-kicker">Automate the exception</span>
+            <h3>Refund late payments automatically instead of reconciling them by hand.</h3>
+            <dl>
+              <dt>Problem</dt><dd>Occasionally a customer cancelled and the payment arrived seconds later anyway. Each case became a support ticket, a manual refund and a note for the accountant.</dd>
+              <dt>Decision</dt><dd>Detect any payment that lands against a non-pending order and refund it through the original channel, with a ledger entry — no human in the loop unless it fails.</dd>
+              <dt>Result</dt><dd>No more manual refunds for late payments, and the books reconcile without anyone touching them.</dd>
+            </dl>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- ============================== SUB-PROJECT ============================== -->
+    <!-- ============================== ALSO SHIPPED ============================== -->
     <section class="section section-alt" id="registration">
       <div class="container-narrow">
         <p class="eyebrow reveal">Also shipped</p>
-        <h2 class="section-title reveal" data-delay="1">Customer Registration.</h2>
+        <h2 class="section-title reveal" data-delay="1">Paper forms to a live map.</h2>
         <p class="section-lead reveal" data-delay="2">
-          A stand-alone system for collecting customer records in offline sales scenarios across
-          20 countries — and quietly keeping the main platform in step with every submission.
+          Sales staff in 20 countries were collecting customer details on paper. In ten weeks that became a
+          phone form anyone can hand to a customer, a dashboard the owner can check at any time, and a feed
+          that keeps the main platform in step.
         </p>
         <p class="meta-line reveal" data-delay="3">
           <span>May — Jul 2026</span>
-          <span>Sole developer</span>
-          <span>Node.js · Express · SQLite · ECharts</span>
+          <span>Product owner &amp; sole builder</span>
+          <span>Sales staff · Owner · Back office</span>
         </p>
       </div>
 
@@ -417,78 +373,30 @@
         <div class="cards-3">
           <article class="card reveal">
             <div class="card-num">3,423</div>
-            <h3>districts, one picker.</h3>
-            <p>A mobile-first form with 20-country selection, cascading document types, a full province / city / district three-level selector, ID photo upload and a product-feedback survey.</p>
+            <h3>districts, no typing.</h3>
+            <p>Country-aware fields, a full province / city / district picker, ID photo capture and a short product-feedback survey — designed to be completed at a sales counter, on the customer's own phone.</p>
           </article>
           <article class="card reveal" data-delay="1">
-            <div class="card-num">3 levels</div>
-            <h3>of map drill-down.</h3>
-            <p>An ECharts China map with national → province → city → district drill-down, volume-based colour gradients, right-click inspection and a clickable breadcrumb trail. Filters flow straight into the data table.</p>
+            <div class="card-num">1 glance</div>
+            <h3>instead of a spreadsheet.</h3>
+            <p>A China map that drills from country to province to city to district, quick time filters, search by name / phone / ID, and CSV export. The owner sees where customers are without asking anyone.</p>
           </article>
           <article class="card reveal" data-delay="2">
-            <div class="card-num">30 / min</div>
-            <h3>and not one more.</h3>
-            <p>Per-IP submission limits, login lockout after repeated failures, hardened session cookies, a trusted reverse-proxy chain and CSV export with region / time / free-text filters.</p>
+            <div class="card-num">1 record</div>
+            <h3>per customer, across two systems.</h3>
+            <p>Registrations flow to the main platform automatically. Matching runs on ID document first, then phone; anyone unmatched is claimed the moment they log in to the Mini Program — so no duplicates, ever.</p>
           </article>
         </div>
-
-        <section class="pipeline reveal" aria-labelledby="pipelineCaption">
-          <div class="pipeline-caption" id="pipelineCaption">Sync pipeline to the main platform</div>
-          <ol class="pipeline-steps">
-            <li><span class="pipeline-step">Submit</span><span class="pipeline-desc">Form posts to SQLite; row committed first</span></li>
-            <li><span class="pipeline-step">Enqueue</span><span class="pipeline-desc">Sync job written in the same transaction</span></li>
-            <li><span class="pipeline-step">Push</span><span class="pipeline-desc">HMAC-signed webhook, exponential back-off ×30</span></li>
-            <li><span class="pipeline-step">Match</span><span class="pipeline-desc">Country + ID number, then phone</span></li>
-            <li><span class="pipeline-step">Claim</span><span class="pipeline-desc">Placeholder member bound on first WeChat login</span></li>
-          </ol>
-        </section>
       </div>
     </section>
 
-    <!-- ============================== STACK ============================== -->
-    <section class="section" id="stack">
+    <!-- ============================== APPROACH (dark) ============================== -->
+    <section class="section section-dark" id="approach">
       <div class="container-narrow">
-        <p class="eyebrow reveal">Stack</p>
-        <h2 class="section-title reveal" data-delay="1">Chosen for the job. Learned to the bottom.</h2>
-      </div>
-
-      <div class="container">
-        <div class="skills reveal">
-          <div class="skill-group">
-            <h3>Back end</h3>
-            <p>Node.js, Express, RESTful API design, JWT + RBAC authorisation, layered middleware, rate limiting, audit logging, transactional integrity with PostgreSQL</p>
-          </div>
-          <div class="skill-group">
-            <h3>Front end</h3>
-            <p>HTML / CSS / JavaScript, WeChat native Mini Program (WXML / WXSS / WXS), ECharts data visualisation, a 9,000-line drag-and-drop page builder written from scratch</p>
-          </div>
-          <div class="skill-group">
-            <h3>Payments &amp; integrations</h3>
-            <p>WeChat Pay v3 (JSAPI / H5), Alipay (PC / JSAPI), AdaPay, WeChat Login &amp; Order Centre, WeCom SSO, Aliyun SMS / OSS / MTS, Hupun ERP, custom HMAC / MD5 request signing</p>
-          </div>
-          <div class="skill-group">
-            <h3>Data</h3>
-            <p>PostgreSQL schema design and 37-step incremental migrations, dual-track PG / JSON storage with fallback, SQLite, seed back-fill, PII masking, financial ledgers</p>
-          </div>
-          <div class="skill-group">
-            <h3>Cloud &amp; operations</h3>
-            <p>Alibaba Cloud ECS / OSS / DNS, Docker Compose, Nginx reverse proxy &amp; HTTPS, Let's Encrypt auto-renewal, PM2, one-command rsync deployment, health checks &amp; launch checklists</p>
-          </div>
-          <div class="skill-group">
-            <h3>Quality &amp; tooling</h3>
-            <p>Jest &amp; Supertest (300+ cases), GitHub Actions CI with Docker build, ESLint at zero errors, miniprogram-ci automated uploads, Git branch protection</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============================== PROCESS (dark) ============================== -->
-    <section class="section section-dark" id="process">
-      <div class="container-narrow">
-        <p class="eyebrow reveal">How I work</p>
-        <h2 class="section-title reveal" data-delay="1">Own the whole lifecycle.</h2>
+        <p class="eyebrow reveal">Approach</p>
+        <h2 class="section-title reveal" data-delay="1">How I work with a business.</h2>
         <p class="section-lead reveal" data-delay="2">
-          There was no hand-off. Every decision below was mine — and so was every consequence.
+          Habits from a year of being the only person between an owner's ambitions and a working product.
         </p>
       </div>
 
@@ -496,35 +404,54 @@
         <ol class="process reveal">
           <li>
             <span class="process-num">01</span>
-            <h3>Understand</h3>
-            <p>Translate a business owner's needs — dealers, tiers, commissions, traceability — into a system that can actually be built and operated.</p>
+            <h3>Listen for the problem, not the feature</h3>
+            <p>"We need a coupon system" usually means "our dealers are losing customers to price". Solve the second thing.</p>
           </li>
           <li>
             <span class="process-num">02</span>
-            <h3>Design</h3>
-            <p>Schema first. 37 migrations, a payment abstraction and an RBAC model that survived nine months of changing requirements.</p>
+            <h3>Write it down before building it</h3>
+            <p>Scope, decisions and trade-offs go into documents people can disagree with. Sixteen of them, plus a guide, on this project alone.</p>
           </li>
           <li>
             <span class="process-num">03</span>
-            <h3>Build</h3>
-            <p>126K lines across three surfaces: console, Mini Program and API. Fragile modules documented and guarded with targeted tests.</p>
+            <h3>Ship small, ship often</h3>
+            <p>Fifty releases beat one big launch. Each one is a chance for the business to say "not quite" while it is still cheap.</p>
           </li>
           <li>
             <span class="process-num">04</span>
-            <h3>Verify</h3>
-            <p>300+ automated tests, CI on every push, production verification scripts and a launch-readiness checklist.</p>
+            <h3>Make the business self-sufficient</h3>
+            <p>Page builder, configurable rules, an operations guide. Success is when the client stops needing to call me.</p>
           </li>
           <li>
             <span class="process-num">05</span>
-            <h3>Ship</h3>
-            <p>Package → rsync → restart in one command. Mini Program builds uploaded straight from CI. HTTPS, DNS and CDN configured end to end.</p>
+            <h3>Respect the money and the data</h3>
+            <p>Payments reconcile, refunds are traceable, migrations don't lose records, and sensitive information is masked by default.</p>
           </li>
           <li>
             <span class="process-num">06</span>
-            <h3>Operate</h3>
-            <p>Health checks, inspection scripts, audit logs and runbooks. When something breaks at 11 pm, I am the on-call.</p>
+            <h3>Own the outcome</h3>
+            <p>Not the ticket, the outcome. If the launch slips because a form wasn't filed, filing the form is my job too.</p>
           </li>
         </ol>
+      </div>
+    </section>
+
+    <!-- ============================== TECHNICAL FOUNDATION ============================== -->
+    <section class="section section-foundation" id="foundation">
+      <div class="container-narrow">
+        <p class="eyebrow reveal">Technical foundation</p>
+        <h2 class="section-title reveal" data-delay="1">Still technical enough to be dangerous.</h2>
+        <p class="section-lead reveal" data-delay="2">
+          I built all of this myself, so I can talk to engineers as a peer, evaluate vendors on substance, and
+          prototype when a slide isn't enough. The full engineering write-up — architecture, testing, security,
+          annotated code — is one click away.
+        </p>
+        <p class="stack-line reveal" data-delay="3">
+          Node.js · PostgreSQL · WeChat Mini Program · REST APIs · WeChat Pay · Alipay · AdaPay · Alibaba Cloud · Docker · Nginx · GitHub Actions · 300+ automated tests
+        </p>
+        <div class="hero-cta reveal" data-delay="3">
+          <a class="link-arrow" href="engineering/">Read the engineering deep-dive</a>
+        </div>
       </div>
     </section>
 
@@ -532,9 +459,10 @@
     <section class="section section-contact" id="contact">
       <div class="container-narrow">
         <p class="eyebrow reveal">Contact</p>
-        <h2 class="section-title reveal" data-delay="1">Let's build something that holds up.</h2>
+        <h2 class="section-title reveal" data-delay="1">Let's talk about what you're trying to build.</h2>
         <p class="section-lead reveal" data-delay="2">
-          Based in Canberra, open to full-stack and back-end roles. I reply to every message.
+          Based in Canberra, open to product, solutions and business-analysis roles — on site or remote. I reply
+          to every message, in English or Mandarin.
         </p>
         <div class="contact-actions reveal" data-delay="3">
           <a class="btn" href="mailto:howiewang122@gmail.com">howiewang122@gmail.com</a>
