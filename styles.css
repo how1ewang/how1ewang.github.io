@@ -294,6 +294,7 @@ body.nav-open .nav-mobile a:nth-child(4) { transition-delay: 0.12s; }
 body.nav-open .nav-mobile a:nth-child(5) { transition-delay: 0.15s; }
 body.nav-open .nav-mobile a:nth-child(6) { transition-delay: 0.18s; }
 body.nav-open .nav-mobile a:nth-child(7) { transition-delay: 0.21s; }
+body.nav-open .nav-mobile a:nth-child(8) { transition-delay: 0.24s; }
 body.nav-open { overflow: hidden; }
 
 /* --------------------------------------------------------------------------

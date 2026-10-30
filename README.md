@@ -2,7 +2,7 @@
 
 Personal site of Howie Wang — live at **https://how1ewang.github.io/**
 
-Hand-written HTML, CSS and about 4 KB of JavaScript. No framework, no build step, no dependencies beyond a web font. Every push to `main` is published automatically by GitHub Pages.
+Plain HTML, CSS and about 4 KB of JavaScript, written with Claude Code and Cursor. No framework, no build step, no dependencies beyond a web font. Every push to `main` is published automatically by GitHub Pages.
 
 ## Design notes
 
