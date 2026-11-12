@@ -223,6 +223,7 @@ code { font-family: var(--mono); font-size: 0.92em; }
   gap: 24px;
 }
 .nav-brand {
+  white-space: nowrap;
   font-size: 17px;
   font-weight: 600;
   letter-spacing: -0.02em;
@@ -230,6 +231,7 @@ code { font-family: var(--mono); font-size: 0.92em; }
 }
 .nav-links { display: flex; gap: 34px; }
 .nav-links a {
+  white-space: nowrap;
   font-size: 13px;
   font-weight: 400;
   letter-spacing: -0.005em;
@@ -295,6 +297,7 @@ body.nav-open .nav-mobile a:nth-child(5) { transition-delay: 0.15s; }
 body.nav-open .nav-mobile a:nth-child(6) { transition-delay: 0.18s; }
 body.nav-open .nav-mobile a:nth-child(7) { transition-delay: 0.21s; }
 body.nav-open .nav-mobile a:nth-child(8) { transition-delay: 0.24s; }
+body.nav-open .nav-mobile a:nth-child(9) { transition-delay: 0.27s; }
 body.nav-open { overflow: hidden; }
 
 /* --------------------------------------------------------------------------
@@ -1141,6 +1144,7 @@ body.nav-open { overflow: hidden; }
    Responsive
    -------------------------------------------------------------------------- */
 @media (max-width: 1068px) {
+  .nav-links { gap: 22px; }
   .section { padding: 104px 0; }
   .hero { padding-top: calc(var(--nav-h) + 92px); }
 
@@ -1174,11 +1178,16 @@ body.nav-open { overflow: hidden; }
   .bento-lite .tile { padding: 26px 26px 28px; }
 }
 
+/* Seven links no longer fit beside the brand and the résumé button on a
+   portrait tablet, so the menu button takes over a little earlier. */
+@media (max-width: 900px) {
+  .nav-links { display: none; }
+  .nav-toggle { display: block; }
+}
+
 @media (max-width: 734px) {
   :root { --gutter: 18px; --nav-h: 48px; }
 
-  .nav-links { display: none; }
-  .nav-toggle { display: block; }
   .nav-actions .btn-sm { display: none; }
 
   .section { padding: 84px 0; }

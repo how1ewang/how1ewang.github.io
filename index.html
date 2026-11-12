@@ -4,13 +4,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Howie Wang — AI-native solutions engineer</title>
-  <meta name="description" content="Howie Wang takes a business from first conversation to live product alone, directing AI coding agents to do the build — discovery, integration, go-live, training and support. Eleven partner systems integrated, 67 releases, 900+ members, one person. Canberra, Australia.">
+  <meta name="description" content="Howie Wang takes a business from first conversation to live product alone, directing AI coding agents to do the build — discovery, integration, go-live, training and support. Eleven partner systems integrated, 69 app versions, 900+ members, one person. Canberra, Australia.">
   <meta name="author" content="Howie Wang">
   <meta name="theme-color" content="#fbfbfd">
 
   <meta property="og:type" content="website">
   <meta property="og:title" content="Howie Wang — One person and AI agents, from first conversation to live product">
-  <meta property="og:description" content="AI-native solutions engineer. A commerce platform for a biotech company, built and run by one person directing AI coding agents: 11 partner integrations, 67 releases, 900+ members.">
+  <meta property="og:description" content="AI-native solutions engineer. A commerce platform for a biotech company, built and run by one person directing AI coding agents: 11 partner integrations, 69 app versions, 900+ members.">
   <meta property="og:image" content="https://how1ewang.github.io/img/console-builder.jpg">
   <meta name="twitter:card" content="summary_large_image">
 
@@ -51,6 +51,7 @@
 
       <nav class="nav-links" aria-label="Primary">
         <a href="#work">Case study</a>
+        <a href="#problems">Problems</a>
         <a href="#ai">How I build</a>
         <a href="#capabilities">Capabilities</a>
         <a href="#decisions">Decisions</a>
@@ -69,6 +70,7 @@
 
   <nav class="nav-mobile" id="mobileMenu" aria-label="Mobile">
     <a href="#work">Case study</a>
+    <a href="#problems">Problems solved</a>
     <a href="#ai">How I build</a>
     <a href="#capabilities">Capabilities</a>
     <a href="#decisions">Decisions</a>
@@ -121,8 +123,8 @@
           <div class="stat-label">partner systems integrated</div>
         </div>
         <div class="stat">
-          <div class="stat-value"><span data-count="67">67</span></div>
-          <div class="stat-label">releases shipped</div>
+          <div class="stat-value"><span data-count="69">69</span></div>
+          <div class="stat-label">app versions shipped</div>
         </div>
         <div class="stat">
           <div class="stat-value"><span data-count="900">900</span>+</div>
@@ -168,7 +170,7 @@
             <li><span class="pipeline-step">Scope</span><span class="pipeline-desc">17 product areas in phases: storefront first, then loyalty, dealers, content.</span></li>
             <li><span class="pipeline-step">Implement &amp; integrate</span><span class="pipeline-desc">Four products on one platform, built with AI agents; 11 partner systems connected.</span></li>
             <li><span class="pipeline-step">Go live</span><span class="pipeline-desc">WeChat compliance, entity filings, domain and HTTPS, launch checklist.</span></li>
-            <li><span class="pipeline-step">Train &amp; support</span><span class="pipeline-desc">Illustrated guide and four role-based manuals for staff; feedback rounds became 67 releases; on call when it broke.</span></li>
+            <li><span class="pipeline-step">Train &amp; support</span><span class="pipeline-desc">Illustrated guide and four role-based manuals for staff; feedback rounds became 69 app versions; on call when it broke.</span></li>
           </ol>
         </section>
 
@@ -178,12 +180,12 @@
           <div class="arch-row arch-row-3">
             <div class="arch-node">
               <div class="arch-node-kicker">Staff console</div>
-              <div class="arch-node-title">100+ screens</div>
+              <div class="arch-node-title">39 pages</div>
               <div class="arch-node-desc">Page builder · orders &amp; after-sales · members · coupons · finance · anti-counterfeit.</div>
             </div>
             <div class="arch-node">
               <div class="arch-node-kicker">WeChat Mini Program</div>
-              <div class="arch-node-title">60 screens</div>
+              <div class="arch-node-title">58 screens</div>
               <div class="arch-node-desc">Storefront · in-app payment · points wallet · dealer hierarchy · scan-to-verify.</div>
             </div>
             <div class="arch-node">
@@ -227,8 +229,55 @@
       </div>
     </section>
 
+    <!-- ============================== PROBLEMS SOLVED ============================== -->
+    <section class="section section-alt" id="problems">
+      <div class="container-narrow">
+        <p class="eyebrow reveal">In production</p>
+        <h2 class="section-title reveal" data-delay="1">Problems solved.</h2>
+        <p class="section-lead reveal" data-delay="2">
+          Building it was half the job. These are six things that were actually wrong on the live
+          platform, and what changed. Each was found, fixed and verified with AI agents under my direction.
+        </p>
+      </div>
+
+      <div class="container">
+        <div class="cards-3">
+          <article class="card reveal">
+            <div class="card-num">82%</div>
+            <h3>of server traffic was video.</h3>
+            <p>Home-page videos streamed through the app server on a metered line. Playback moved to cloud storage on its own domain, behind one switch with a one-line rollback. About 80% of the server's traffic now goes straight from storage.</p>
+          </article>
+          <article class="card reveal" data-delay="1">
+            <div class="card-num">21×</div>
+            <h3>faster uploads from overseas.</h3>
+            <p>An 81 MB video took three hours to upload, then failed at 88%. The bottleneck was measured first, then uploads were rebuilt to go straight to storage in parallel parts, with acceleration.</p>
+          </article>
+          <article class="card reveal" data-delay="2">
+            <div class="card-num">8</div>
+            <h3>referral records that disagreed.</h3>
+            <p>Two systems recorded the referral tree differently, and commissions depend on it. Each case was checked against the history — 4 corrected, 4 confirmed — and one record became the source of truth before the first settlement ran.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card-num">0</div>
+            <h3>app releases to restore a lost QR code.</h3>
+            <p>Referral posters were rendering without their QR code. Found in the production logs, traced past the app to a web-server rule, and fixed with no app release and no wait for WeChat review.</p>
+          </article>
+          <article class="card reveal" data-delay="1">
+            <div class="card-num">&lt;1 min</div>
+            <h3>of downtime for a platform upgrade.</h3>
+            <p>The runtime and database had reached end of life on a live system with no scheduled backups. Both were upgraded behind a snapshot and a rollback plan, and daily backups are now proven by test restores.</p>
+          </article>
+          <article class="card reveal" data-delay="2">
+            <div class="card-num">26</div>
+            <h3>features that only looked finished.</h3>
+            <p>AI-built screens can look complete and do nothing. I ordered an audit of every screen, had all 26 findings fixed or removed, then tightened the audit to trace every saved value to the code that uses it.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <!-- ============================== HOW I BUILD (AI) ============================== -->
-    <section class="section section-alt" id="ai">
+    <section class="section" id="ai">
       <div class="container-narrow">
         <p class="eyebrow reveal">How I build</p>
         <h2 class="section-title reveal" data-delay="1">One person.<br>A team of AI agents.</h2>
@@ -246,14 +295,14 @@
             <li><span class="pipeline-step">Scope</span><span class="pipeline-desc">Talk to the owner and staff; settle what the change is for.</span></li>
             <li><span class="pipeline-step">Spec</span><span class="pipeline-desc">Write the requirement and the checks that prove it works.</span></li>
             <li><span class="pipeline-step">Agents build</span><span class="pipeline-desc">Code, tests and migrations, with the project's rules loaded in every session.</span></li>
-            <li><span class="pipeline-step">Verify</span><span class="pipeline-desc">760+ automated tests, then my own check on a real phone.</span></li>
-            <li><span class="pipeline-step">Ship on my yes</span><span class="pipeline-desc">Hash-verified deploy with automatic rollback, run only on my go-ahead.</span></li>
+            <li><span class="pipeline-step">Verify</span><span class="pipeline-desc">980+ automated tests, then my own check on a real phone.</span></li>
+            <li><span class="pipeline-step">Ship on my yes</span><span class="pipeline-desc">Hash-verified deploy that restores the backup if a check fails, run only on my go-ahead.</span></li>
           </ol>
         </section>
 
         <ul class="facts reveal">
           <li>
-            <span class="fact-num">240+</span>
+            <span class="fact-num">260+</span>
             <span class="fact-text">commits from one person and AI coding agents. No team, no hand-offs.</span>
           </li>
           <li>
@@ -262,7 +311,7 @@
           </li>
           <li>
             <span class="fact-num">1 rulebook</span>
-            <span class="fact-text">every session starts from: a prompt template, Cursor rules, an AGENTS.md and persistent agent memory with the architecture, conventions and deploy rules.</span>
+            <span class="fact-text">every session starts from: a prompt template, written project rules, an AGENTS.md and persistent agent memory with the architecture, conventions, deploy rules and lessons from past incidents.</span>
           </li>
         </ul>
       </div>
@@ -327,11 +376,11 @@
           <article class="tile tile-2 reveal" data-delay="2">
             <div class="tile-top">
               <span class="tile-icon"><svg><use href="#i-loop"/></svg></span>
-              <span class="tile-metric">67 releases</span>
+              <span class="tile-metric">69 versions</span>
             </div>
             <span class="tile-kicker">Delivery &amp; iteration</span>
             <h3>Ship small. Ship often.</h3>
-            <p>Sixty-seven releases, each small enough to reverse, each with notes the client could read.</p>
+            <p>Sixty-nine app versions, each small enough to reverse, each with notes the client could read.</p>
           </article>
 
           <article class="tile tile-3 reveal">
@@ -540,7 +589,7 @@
           <li>
             <span class="process-num">03</span>
             <h3>Ship small, ship often</h3>
-            <p>Sixty-seven small releases beat one big launch. "Not quite" stays cheap.</p>
+            <p>Sixty-nine small versions beat one big launch. "Not quite" stays cheap.</p>
           </li>
           <li>
             <span class="process-num">04</span>
@@ -572,7 +621,7 @@
           is one click away.
         </p>
         <p class="stack-line reveal" data-delay="3">
-          Claude Code · Cursor · Node.js · PostgreSQL · REST APIs · OAuth · Webhooks · WeChat Mini Program · WeChat Pay · Alipay · AdaPay · Alibaba Cloud · Docker · Nginx · DNS / TLS · GitHub Actions · 760+ automated tests
+          Claude Code · Cursor · Node.js · PostgreSQL · REST APIs · OAuth · Webhooks · WeChat Mini Program · WeChat Pay · Alipay · AdaPay · Alibaba Cloud · Docker · Nginx · DNS / TLS · GitHub Actions · 980+ automated tests
         </p>
         <div class="hero-cta reveal" data-delay="3">
           <a class="link-arrow" href="engineering/">Read the engineering deep-dive</a>
